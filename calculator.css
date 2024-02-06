@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+  }
+  input[type="text"],
+  input[type="button"] {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: grey;
+  }
+  input[type="text"] {
+    width: 200px;
+  }
+#ac, #delete{
+    background-color: rgb(252, 53, 53);
+}
+#add,#sub,#multiply,#divide,#result{
+    background-color: rgb(109, 165, 109);
+}
+
+
+
+
+
+
+
