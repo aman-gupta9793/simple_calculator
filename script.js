@@ -8,11 +8,19 @@ function clearScreen() {
 
 function calculateResult() {
   try {
-    document.getElementById("screen").value = eval(
-      document.getElementById("screen").value
-    );
+    var result = eval(document.getElementById("screen").value);
+    if (result === Infinity || result === -Infinity) {
+      document.getElementById("screen").value = "math error";
+    } else {
+      var resultString = result.toString();
+      if (resultString.length > 10) {
+        document.getElementById("screen").value = "error";
+      } else {
+        document.getElementById("screen").value = result;
+      }
+    }
   } catch (error) {
-    document.getElementById("screen").value = "Error";
+    document.getElementById("screen").value = "error";
   }
 }
 
